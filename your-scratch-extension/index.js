@@ -17,10 +17,10 @@ class Scratch3YourExtension {
             id: 'yourScratchExtension',
 
             // name that will be displayed in the Scratch UI
-            name: 'Demo',
+            name: 'Adam',
 
             // colours to use for your extension blocks
-            color1: '#000099',
+            color1: '#1000af',
             color2: '#660066',
 
             // icons to display
@@ -31,7 +31,7 @@ class Scratch3YourExtension {
             blocks: [
                 {
                     // name of the function where your block code lives
-                    opcode: 'myFirstBlock',
+                    opcode: 'silly',
 
                     // type of block - choose from:
                     //   BlockType.REPORTER - returns a value, like "direction"
@@ -41,7 +41,7 @@ class Scratch3YourExtension {
                     blockType: BlockType.REPORTER,
 
                     // label to display on the block
-                    text: 'My first block [MY_NUMBER] and [MY_STRING]',
+                    text: 'My favorite food is [food]',
 
                     // true if this block should end a stack
                     terminal: false,
@@ -50,7 +50,7 @@ class Scratch3YourExtension {
                     //   TargetType.SPRITE - for code in sprites
                     //   TargetType.STAGE  - for code on the stage / backdrop
                     // remove one of these if this block doesn't apply to both
-                    filter: [ TargetType.SPRITE, TargetType.STAGE ],
+                    filter: [TargetType.SPRITE],
 
                     // arguments used in the block
                     arguments: {
