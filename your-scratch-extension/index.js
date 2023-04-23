@@ -54,30 +54,9 @@ class Scratch3YourExtension {
 
                     // arguments used in the block
                     arguments: {
-                        MY_NUMBER: {
-                            // default value before the user sets something
-                            defaultValue: 123,
+                        food: {
+                            default: 'ants',
 
-                            // type/shape of the parameter - choose from:
-                            //     ArgumentType.ANGLE - numeric value with an angle picker
-                            //     ArgumentType.BOOLEAN - true/false value
-                            //     ArgumentType.COLOR - numeric value with a colour picker
-                            //     ArgumentType.NUMBER - numeric value
-                            //     ArgumentType.STRING - text value
-                            //     ArgumentType.NOTE - midi music value with a piano picker
-                            type: ArgumentType.NUMBER
-                        },
-                        MY_STRING: {
-                            // default value before the user sets something
-                            defaultValue: 'hello',
-
-                            // type/shape of the parameter - choose from:
-                            //     ArgumentType.ANGLE - numeric value with an angle picker
-                            //     ArgumentType.BOOLEAN - true/false value
-                            //     ArgumentType.COLOR - numeric value with a colour picker
-                            //     ArgumentType.NUMBER - numeric value
-                            //     ArgumentType.STRING - text value
-                            //     ArgumentType.NOTE - midi music value with a piano picker
                             type: ArgumentType.STRING
                         }
                     }
@@ -91,9 +70,8 @@ class Scratch3YourExtension {
      * implementation of the block with the opcode that matches this name
      *  this will be called when the block is used
      */
-    myFirstBlock ({ MY_NUMBER, MY_STRING }) {
-        // example implementation to return a string
-        return MY_STRING + ' : doubled would be ' + (MY_NUMBER * 2);
+    myFirstBlock ({food}) {
+        return "Glug glug glug, my face is a bug. I eat " + food + " for breakfast, right off the ruuuuuugg!"
     }
 }
 
